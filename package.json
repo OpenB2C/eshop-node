@@ -1,34 +1,45 @@
 {
-  "name": "nodejs-ex",
-  "version": "0.0.1",
-  "description": "Node.js sample app for OpenShift 3",
-  "main": "server.js",
-  "dependencies": {
-    "chai": "^3.5.0",
-    "chai-http": "^2.0.1",
-    "ejs": "^2.4.1",
-    "express": "^4.13.4",
-    "mocha": "^2.4.5",
-    "mongodb": "^2.1.16",
-    "morgan": "^1.7.0",
-    "object-assign":"4.1.0"
-  },
-  "engine": {
-    "node": "*",
-    "npm": "*"
-  },
+  "name": "nideshop",
+  "description": "nideshop - open source mini program shop",
+  "version": "1.0.0",
   "scripts": {
-    "start": "node server.js",
-    "test": "IP=0.0.0.0 PORT=3030 mocha --timeout 5000 tests/*_test.js"
+    "start": "node development.js",
+    "compile": "babel --no-babelrc src/ --presets think-node --out-dir app/",
+    "lint": "eslint src/",
+    "lint-fix": "eslint --fix src/"
   },
-  "repository": {
-    "type": "git",
-    "url": "http://github.com/sclorg/nodejs-ex.git"
+  "dependencies": {
+    "gm": "^1.23.0",
+    "jsonwebtoken": "^8.0.0",
+    "kcors": "^2.2.1",
+    "lodash": "^4.17.4",
+    "md5": "^2.2.1",
+    "moment": "^2.18.1",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1",
+    "think-cache": "^1.0.0",
+    "think-cache-file": "^1.0.8",
+    "think-logger3": "^1.0.0",
+    "think-model": "^1.0.0",
+    "think-model-mysql": "^1.0.0",
+    "thinkjs": "^3.0.0",
+    "weixinpay": "^1.0.12",
+    "xml2js": "^0.4.19"
   },
-  "author": "Steve Speicher <sspeiche@gmail.com>",
-  "license": "CC-BY-1.0",
-  "bugs": {
-    "url": "http://github.com/sclorg/nodejs-ex/issues"
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-think-node": "^1.0.0",
+    "node-notifier": "^5.0.2",
+    "think-watcher": "^3.0.0",
+    "think-inspect": "0.0.2",
+    "think-babel": "^1.0.3",
+    "eslint": "^4.2.0",
+    "eslint-config-think": "^1.0.0"
   },
-  "homepage": "http://github.com/sclorg/nodejs-ex"
+  "repository": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "readmeFilename": "README.md"
 }

@@ -1,0 +1,26 @@
+// 原来的配置文件，仅作参考
+{
+  "name": "eshop-node",
+  "version": "0.0.1",
+  "description": "微信商城node部分",
+  "main": "server.js",
+  "dependencies": {
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "morgan": "^1.7.0",
+    "object-assign": "4.1.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^2.0.1",
+    "mocha": "^2.4.5"
+  },
+  "engine": {
+    "node": "*",
+    "npm": "*"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "IP=0.0.0.0 PORT=3030 mocha --timeout 5000 tests/*_test.js"
+  }
+}
