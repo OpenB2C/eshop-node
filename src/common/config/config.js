@@ -1,5 +1,6 @@
 // default config
 module.exports = {
+  port: process.env.PORT || 8080,
   default_module: 'api',
   weixin: {
     appid: '', // 小程序 appid
