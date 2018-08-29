@@ -3,7 +3,7 @@
   "description": "nideshop - open source mini program shop",
   "version": "1.0.0",
   "scripts": {
-    "start": "node development.js",
+    "start": "echo 无可奈何暂时在运行前安装devDependency && npm install --dev && node development.js",
     "compile": "babel --no-babelrc src/ --presets think-node --out-dir app/",
     "lint": "eslint src/",
     "lint-fix": "eslint --fix src/"
